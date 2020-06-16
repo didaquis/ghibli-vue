@@ -1,5 +1,8 @@
 # typescript-vue
 
+Pet project using: Babel, TypeScript, Router, Jest, Cypress and so on!
+
+
 ## Project setup
 ```
 npm install

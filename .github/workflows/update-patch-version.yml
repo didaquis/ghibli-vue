@@ -1,0 +1,35 @@
+# This workflow will do a clean install of node dependencies, update the patch version of the package.json file across different versions of node and commit the changes (it works after push a comit or after merge a pull request).
+
+# WARNING: This GitHub Action requires a GITHUB_TOKEN active on your GitHub account.
+
+name: Node.js CI - Update patch version
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }} to update the patch version
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm --no-git-tag-version version patch
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
+      with:
+        message: "Patch version has been incremented using GitHub Actions"
+        add: "package.json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

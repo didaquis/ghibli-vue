@@ -17,6 +17,9 @@ vue create  your-project
 // cypress
 ```
 
+This repo is deployed here ➡️  https://studio-ghibli-overview.netlify.app  
+
+
 ## Project setup
 ```
 npm install

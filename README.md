@@ -6,7 +6,16 @@ https://ghibliapi.herokuapp.com/#
 
 https://blog.logrocket.com/how-to-write-a-vue-js-app-completely-in-typescript/ 
 
+This repos is created with these settings: 
+```sh
+vue create  your-project
 
+// tech selected: babel, router, linter/formatter, unit testing, e2e testing.
+// class style component => NO
+// eslint with error prevention only
+// jest
+// cypress
+```
 
 ## Project setup
 ```

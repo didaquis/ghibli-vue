@@ -6,7 +6,7 @@
 import FilmsList from '@/components/FilmsList.vue'
 
 export default {
-	name: 'Films',
+	name: 'FilmsPage',
 	components: {
 		FilmsList
 	}

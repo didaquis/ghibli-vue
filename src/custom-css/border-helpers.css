@@ -1,0 +1,51 @@
+/* Vars */
+:root {
+	--border-0: 0;
+	--border-1: 4px;
+	--border-2: 6px;
+	--border-3: 10px;
+	--border-4: 16px;
+	--border-5: 24px;
+	--border-6: 50%;
+}
+
+/* Border radius */
+.custom-b-0 { border-radius: var(--border-0); }
+.custom-b-1 { border-radius: var(--border-1); }
+.custom-b-2 { border-radius: var(--border-2); }
+.custom-b-3 { border-radius: var(--border-3); }
+.custom-b-4 { border-radius: var(--border-4); }
+.custom-b-5 { border-radius: var(--border-5); }
+.custom-b-6 { border-radius: var(--border-6); }
+
+.custom-btl-0 { border-top-left-radius: var(--border-0); }
+.custom-btl-1 { border-top-left-radius: var(--border-1); }
+.custom-btl-2 { border-top-left-radius: var(--border-2); }
+.custom-btl-3 { border-top-left-radius: var(--border-3); }
+.custom-btl-4 { border-top-left-radius: var(--border-4); }
+.custom-btl-5 { border-top-left-radius: var(--border-5); }
+.custom-btl-6 { border-top-left-radius: var(--border-6); }
+
+.custom-btr-0 { border-top-right-radius: var(--border-0); }
+.custom-btr-1 { border-top-right-radius: var(--border-1); }
+.custom-btr-2 { border-top-right-radius: var(--border-2); }
+.custom-btr-3 { border-top-right-radius: var(--border-3); }
+.custom-btr-4 { border-top-right-radius: var(--border-4); }
+.custom-btr-5 { border-top-right-radius: var(--border-5); }
+.custom-btr-6 { border-top-right-radius: var(--border-6); }
+
+.custom-bbl-0 { border-bottom-left-radius: var(--border-0); }
+.custom-bbl-1 { border-bottom-left-radius: var(--border-1); }
+.custom-bbl-2 { border-bottom-left-radius: var(--border-2); }
+.custom-bbl-3 { border-bottom-left-radius: var(--border-3); }
+.custom-bbl-4 { border-bottom-left-radius: var(--border-4); }
+.custom-bbl-5 { border-bottom-left-radius: var(--border-5); }
+.custom-bbl-6 { border-bottom-left-radius: var(--border-6); }
+
+.custom-bbr-0 { border-bottom-right-radius: var(--border-0); }
+.custom-bbr-1 { border-bottom-right-radius: var(--border-1); }
+.custom-bbr-2 { border-bottom-right-radius: var(--border-2); }
+.custom-bbr-3 { border-bottom-right-radius: var(--border-3); }
+.custom-bbr-4 { border-bottom-right-radius: var(--border-4); }
+.custom-bbr-5 { border-bottom-right-radius: var(--border-5); }
+.custom-bbr-6 { border-bottom-right-radius: var(--border-6); }

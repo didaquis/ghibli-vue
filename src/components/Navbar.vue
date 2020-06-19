@@ -7,8 +7,8 @@
 			<div class="navbar-menu">
 				<div class="navbar-end">
 					<router-link class="navbar-item" to="/">Home</router-link>
-					<router-link class="navbar-item" to="/about">About</router-link>
 					<router-link class="navbar-item" to="/films">Films</router-link>
+					<router-link class="navbar-item" to="/about">About</router-link>
 				</div>
 			</div>
 		</div>

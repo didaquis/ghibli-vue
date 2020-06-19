@@ -30,7 +30,6 @@
 import service from '@/services/studioGhibli'
 
 export default {
-	name: 'FilmsList',
 	data: () => ({
 		isLoading: false,
 		films: [],

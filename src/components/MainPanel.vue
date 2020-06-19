@@ -11,6 +11,8 @@
 					<div class="has-background-white custom-mr-6 custom-ml-6 custom-b-2">
 						<h1 class="title has-text-primary is-uppercase">
 							Studio Ghibli
+							<br>
+							<span class="jpn-text">スタジオジブリ</span>
 						</h1>
 					</div>
 				</div>
@@ -18,3 +20,12 @@
 		</section>
 	</section>
 </template>
+
+
+<style>
+.jpn-text {
+	font-size: 0.8em;
+	color: tomato;
+	word-break: keep-all;
+}
+</style>

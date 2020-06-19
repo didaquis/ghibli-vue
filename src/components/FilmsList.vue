@@ -15,7 +15,7 @@
 
 			<div v-if="films" class="content">
 				<ul>
-					<li v-for="film in films" v-bind:key="film">
+					<li v-for="film in films" v-bind:key="film.id">
 						{{ film.title }}
 					</li>
 				</ul>

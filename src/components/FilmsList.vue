@@ -26,38 +26,33 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
 
 import service from '@/services/studioGhibli'
 
-@Component
-export default class Films extends Vue {
-  name: 'FilmsList';
-
-  data () {
-    return {
-      isLoading: false,
-      films: [],
-      error: null
-    }
-  };
-
-  created () {
-    this.fetchFilms()
-  };
-
-  fetchFilms = async function () {
-    this.error = null
-    this.films = null
-    this.isLoading = true
-    try {
-      const results = await service.getFilms()
-      this.isLoading = false
-      this.films = results
-    } catch (err) {
-      this.isLoading = false
-      this.error = err.toString()
-    }
-  };
+export default {
+	name: 'FilmsList',
+	data: () => ({
+		isLoading: false,
+		films: [],
+		error: null
+	}),
+	created () {
+		this.fetchFilms()
+	},
+	methods: {
+		async fetchFilms () {
+			this.error = null
+			this.films = null
+			this.isLoading = true
+			try {
+				const results = await service.getFilms()
+				this.isLoading = false
+				this.films = results
+			} catch (err) {
+				this.isLoading = false
+				this.error = err.toString()
+			}
+		}
+	}
 }
 </script>

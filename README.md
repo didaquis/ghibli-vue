@@ -2,7 +2,11 @@
 
 Pet project using: Babel, TypeScript, Router, Buefy, Jest, Cypress and so on!
 
-https://ghibliapi.herokuapp.com/#
+https://ghibliapi.herokuapp.com/# 
+
+https://blog.logrocket.com/how-to-write-a-vue-js-app-completely-in-typescript/ 
+
+
 
 ## Project setup
 ```

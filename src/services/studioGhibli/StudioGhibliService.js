@@ -1,9 +1,6 @@
-import { AxiosInstance } from 'axios'
-
 class StudioGhibliService {
-  fetcher: AxiosInstance
-  baseURL: string
-  constructor (fetcherLibrary: AxiosInstance) {
+
+  constructor (fetcherLibrary) {
     this.fetcher = fetcherLibrary
     this.baseURL = 'https://ghibliapi.herokuapp.com'
   }

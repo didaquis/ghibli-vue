@@ -1,6 +1,6 @@
-# typescript-vue
+# ghibli-vue
 
-Pet project using: Babel, TypeScript, Router, Buefy, Jest, Cypress and so on!
+Pet project using: Babel, Router, Buefy, Jest, Cypress and so on!
 
 https://ghibliapi.herokuapp.com/# 
 

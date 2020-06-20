@@ -1,8 +1,8 @@
 <template>
 	<section class="section">
-		<div class="container">
+		<div class="container has-text-centered">
 			<h1 class="title">Films</h1>
-			<h2 class="subtitle">List of films</h2>
+			<h2 class="subtitle">Discover the list of films</h2>
 
 			<div v-if="isLoading" class="">
 				Loading...
@@ -12,7 +12,8 @@
 			<div v-if="error" class="">
 				{{ error }}
 			</div>
-
+		</div>
+		<div class="container">
 			<div v-if="films" class="content">
 				<ul>
 					<li v-for="film in films" v-bind:key="film.id">

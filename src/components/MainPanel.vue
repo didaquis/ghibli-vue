@@ -18,6 +18,13 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="column is-half is-offset-one-quarter">
+			<figure>
+				<img alt="Logo" class="" src="../assets/mi-vecino-totoro.png">
+			</figure>
+		</div>
+
 	</section>
 </template>
 

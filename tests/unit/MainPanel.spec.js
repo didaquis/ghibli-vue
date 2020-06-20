@@ -8,7 +8,7 @@ describe('MainPanel', () => {
 		expect(wrapper.text()).toMatch(expectedTitle)
 	})
 
-	it('should render an image', () => {
+	it('should render the main image', () => {
 		const wrapper = shallowMount(MainPanel)
 		const image = wrapper.find('img')
 

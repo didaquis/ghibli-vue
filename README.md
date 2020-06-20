@@ -15,6 +15,8 @@ vue create  your-project
 // eslint with error prevention only
 // jest
 // cypress
+
+// then add your favorite rules to linter
 ```
 
 This repo is deployed here ➡️  https://studio-ghibli-overview.netlify.app  

@@ -2,7 +2,7 @@
 	<section class="container">
 
 		<div class="column is-half is-offset-one-quarter custom-mt-6">
-			<p class="subtitle is-4 has-text-primary has-text-centered">An overview of Studio Ghibli films</p>
+			<p class="subtitle is-4 has-text-primary has-text-centered">An overview of Studio Ghibli universe</p>
 		</div>
 
 		<section class="hero is-primary custom-mt-5 custom-ml-5 custom-mr-5 custom-b-5">
@@ -18,6 +18,13 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="column is-half is-offset-one-quarter">
+			<figure>
+				<img alt="Logo" class="" src="../assets/mi-vecino-totoro.png">
+			</figure>
+		</div>
+
 	</section>
 </template>
 

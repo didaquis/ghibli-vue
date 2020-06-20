@@ -1,11 +1,14 @@
 <template>
-	<div class="about">
-		<h1>This is an about page</h1>
-	</div>
+	<SiteDescription />
 </template>
 
 <script>
+import SiteDescription from '@/components/SiteDescription.vue'
+
 export default {
-	name: 'AboutPage'
+	name: 'AboutPage',
+	components: {
+		SiteDescription
+	}
 }
 </script>

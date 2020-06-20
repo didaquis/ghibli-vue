@@ -1,5 +1,3 @@
-// https://docs.cypress.io/api/introduction/api.html
-
 describe('About page', () => {
 	beforeEach(() => {
 		cy.visit('/about')

@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Navbar />
-		<main>
+		<main data-cy="main-content">
 			<router-view/>
 		</main>
 	</div>

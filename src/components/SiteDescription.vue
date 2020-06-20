@@ -2,8 +2,8 @@
 	<section class="section">
 
 		<section class="container has-text-centered">
-			<h1 class="title">About this page</h1>
-			<h2 class="subtitle">This website allows you to explore the Studio Ghibli universe</h2>
+			<h1 class="title" data-cy="about-title">About this page</h1>
+			<h2 class="subtitle" data-cy="about-subtitle">This website allows you to explore the Studio Ghibli universe</h2>
 			<section class="content">
 				<p>
 					There are a lot of fans of Studio Ghibli out there! This website uses public data about the company to offer you a new way to explore its content.
@@ -17,9 +17,9 @@
 		<div class="pb-6"></div>
 
 		<section class="container has-text-centered">
-			<h1 class="title">About Studio Ghibli</h1>
+			<h1 class="title" data-cy="about-secondary-title">About Studio Ghibli</h1>
 			<section class="content">
-				<blockquote>
+				<blockquote data-cy="blockquote-description">
 					Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi) is a Japanese animation film studio headquartered in Koganei, Tokyo.
 					<br>
 					The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. It was founded on 15 June 1985 by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the success of Topcraft's anime film Nausicaä of the Valley of the Wind (1984). Studio Ghibli has also collaborated with video game studios on the visual development of several video games.
@@ -28,7 +28,7 @@
 				</blockquote>
 			</section>
 
-			<p>
+			<p data-cy="cta-link-text">
 				Visit the official website of
 				<a target="_blank" rel="noopener" href="http://www.ghibli.jp/">Studio Ghibli</a>
 			</p>

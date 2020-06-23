@@ -37,7 +37,7 @@ describe('Nav menu of the site', () => {
 
 	context('iPhone-6 resolution', () => {
 		beforeEach(() => {
-			// run these tests as if in a mobile browser and ensure our responsive UI is correct
+			// run these tests as if in a mobile browser and ensure the responsive UI is correct
 			cy.viewport('iphone-6')
 		})
 

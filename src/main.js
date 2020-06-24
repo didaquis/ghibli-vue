@@ -4,6 +4,9 @@ import router from './router'
 
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+
+import 'bulma-timeline/dist/css/bulma-timeline.min.css' /* Bulma timeline extension */
+
 Vue.use(Buefy)
 
 
@@ -14,7 +17,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 library.add(faHome, faGithub)
-
 
 /* Custom CSS helpers */
 import '@/custom-css/space-helpers.css'

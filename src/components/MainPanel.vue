@@ -5,7 +5,7 @@
 			<p class="subtitle is-4 has-text-primary has-text-centered" data-cy="website-description">An overview of Studio Ghibli universe</p>
 		</div>
 
-		<section class="hero is-primary custom-mt-5 custom-ml-5 custom-mr-5 custom-b-5">
+		<section class="hero is-primary custom-mt-5 custom-ml-5 custom-mr-5 custom-b-5 custom-gradient">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<div class="has-background-white custom-mr-6 custom-ml-6 custom-b-2">
@@ -34,5 +34,10 @@
 	font-size: 0.8em;
 	color: tomato;
 	word-break: keep-all;
+}
+
+.custom-gradient {
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.8)));
 }
 </style>

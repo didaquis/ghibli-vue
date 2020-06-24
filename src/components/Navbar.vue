@@ -10,6 +10,7 @@
 			<template slot="end">
 				<b-navbar-item tag="router-link" :to="{ path: '/home' }">Home</b-navbar-item>
 				<b-navbar-item tag="router-link" :to="{ path: '/films' }">Films</b-navbar-item>
+				<b-navbar-item tag="router-link" :to="{ path: '/timeline' }">Timeline</b-navbar-item>
 				<b-navbar-item tag="router-link" :to="{ path: '/about' }">About</b-navbar-item>
 			</template>
 

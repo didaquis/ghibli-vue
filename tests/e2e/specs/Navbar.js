@@ -3,6 +3,7 @@ describe('Nav menu of the site', () => {
 	const listOfMainRoutes = [
 		'/home',
 		'/films',
+		'/timeline',
 		'/about'
 	]
 

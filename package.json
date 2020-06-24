@@ -16,6 +16,8 @@
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "axios": "^0.19.2",
     "buefy": "^0.8.20",
+    "bulma-extensions": "^6.2.7",
+    "bulma-timeline": "^3.0.4",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4"

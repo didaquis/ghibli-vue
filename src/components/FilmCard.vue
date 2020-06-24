@@ -1,5 +1,5 @@
 <template>
-	<div class="card has-background-info has-text-white" data-cy="film-card">
+	<div class="card has-background-info has-text-white custom-animation" data-cy="film-card">
 		<div class="card-content">
 			<p class="title has-text-white has-text-centered" data-cy="film-card-title">
 				{{ film.title }}
@@ -27,3 +27,11 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+.custom-animation:hover {
+	box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+	transform: translate3D(0, -2px, 0);
+	transition: .4s ease;
+}
+</style>

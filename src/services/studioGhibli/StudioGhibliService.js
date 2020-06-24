@@ -13,6 +13,15 @@ class StudioGhibliService {
 			throw Error(error.message)
 		}
 	}
+
+	async getPeople () {
+		try {
+			const results = await this.fetcher.get(`${this.baseURL}/people`)
+			return results.data
+		} catch (error) {
+			throw Error(error.message)
+		}
+	}
 }
 
 export default StudioGhibliService

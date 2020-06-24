@@ -13,15 +13,14 @@
 				{{ error }}
 			</div>
 		</div>
-		<div class="container">
+		<div class="container custom-mt-6">
 			<div v-if="films" class="content">
-				<ul>
-					<li v-for="film in films" v-bind:key="film.id">
-						{{ film.title }}
-					</li>
-				</ul>
+				<div class="columns is-multiline">
+					<div class="column is-6-tablet is-4-desktop" v-for="film in films" v-bind:key="film.id">
+						<FilmCard :film="film" />
+					</div>
+				</div>
 			</div>
-
 		</div>
 	</section>
 </template>
@@ -29,6 +28,8 @@
 <script>
 
 import service from '@/services/studioGhibli'
+
+import FilmCard from '@/components/FilmCard.vue'
 
 export default {
 	data: () => ({
@@ -38,6 +39,9 @@ export default {
 	}),
 	created () {
 		this.fetchFilms()
+	},
+	components: {
+		FilmCard
 	},
 	methods: {
 		async fetchFilms () {

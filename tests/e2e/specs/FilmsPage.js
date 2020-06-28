@@ -43,4 +43,25 @@ describe('Films page (stub response from API)', () => {
 			cy.get('[data-cy=film-card-footer]').should('have.length', 2)
 		})
 	})
+
+	describe('Notification', () => {
+		it('Should display a button to open notification', () => {
+			cy.get('[data-cy=notification-button]').should('be.visible')
+		})
+
+		it('Should be hidden when page load', () => {
+			cy.get('[data-cy=notification]').should('not.be.visible')
+		})
+
+		it('Should display if button is used', () => {
+			cy.get('[data-cy=notification-button]').click()
+			cy.get('[data-cy=notification]').should('be.visible')
+		})
+
+		it('Should close if user press "delete" button', () => {
+			cy.get('[data-cy=notification]').should('be.visible')
+			cy.get('[data-cy=notification]').find('button').click()
+			cy.get('[data-cy=notification]').should('not.be.visible')
+		})
+	})
 })

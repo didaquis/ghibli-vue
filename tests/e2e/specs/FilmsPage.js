@@ -40,15 +40,15 @@ describe('Films page (stub response from API)', () => {
 				expect(text).to.be.oneOf(expectedScore)
 			})
 
-			cy.get('[data-cy=film-card-title]').should('have.length', 2)
+			cy.get('[data-cy=film-card-score]').should('have.length', 2)
 		})
 
 		it('Should contain the year and director', () => {
-			const regexOfValidResults = new RegExp(/Year: 1986 Director: Hayao Miyazaki|Year: 1988 Director: Isao Takahata/)
+			const expectedFooterText = ['Year: 1986 Director: Hayao Miyazaki', 'Year: 1988 Director: Isao Takahata']
 
 			cy.get('[data-cy=film-card-footer]').each(($el) => {
 				const text = $el.text().trim()
-				expect(text).to.match(regexOfValidResults)
+				expect(text).to.be.oneOf(expectedFooterText)
 			})
 
 			cy.get('[data-cy=film-card-footer]').should('have.length', 2)

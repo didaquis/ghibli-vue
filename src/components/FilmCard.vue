@@ -23,11 +23,14 @@
 </template>
 
 <script>
+const requiredPropertiesOnFilm = ['title', 'description', 'rt_score', 'release_date', 'director']
+
 export default {
 	props: {
 		film: {
 			type: Object,
-			required: true
+			required: true,
+			validator: film => requiredPropertiesOnFilm.every(key => key in film)
 		}
 	}
 }

@@ -58,6 +58,7 @@ describe('Films page (stub response from API)', () => {
 	describe('Notification', () => {
 		it('Should display a button to open notification', () => {
 			cy.get('[data-cy=notification-button]').should('be.visible')
+			cy.get('[data-cy=notification-button]').should('have.length', 1)
 		})
 
 		it('Should be hidden when page load', () => {

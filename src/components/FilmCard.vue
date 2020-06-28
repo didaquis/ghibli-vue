@@ -10,7 +10,7 @@
 
 			<b-taglist attached class="custom-mt-6" data-cy="film-card-score">
 				<b-tag type="is-dark">Rotten Tomato score</b-tag>
-				<b-tag type="is-success">{{ film.rt_score }}</b-tag>
+				<b-tag type="is-light">{{ film.rt_score }}</b-tag>
 			</b-taglist>
 		</div>
 		<footer class="card-footer" data-cy="film-card-footer">

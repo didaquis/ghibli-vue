@@ -32,6 +32,17 @@ describe('Films page (stub response from API)', () => {
 			cy.get('[data-cy=film-card-description]').should('have.length', 2)
 		})
 
+		it('Should contain the tag with score', () => {
+			const expectedScore = ['Rotten Tomato score 95', 'Rotten Tomato score 97']
+
+			cy.get('[data-cy=film-card-score]').each(($el) => {
+				const text = $el.text().trim()
+				expect(text).to.be.oneOf(expectedScore)
+			})
+
+			cy.get('[data-cy=film-card-title]').should('have.length', 2)
+		})
+
 		it('Should contain the year and director', () => {
 			const regexOfValidResults = new RegExp(/Year: 1986 Director: Hayao Miyazaki|Year: 1988 Director: Isao Takahata/)
 

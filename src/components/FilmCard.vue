@@ -7,6 +7,11 @@
 			<p class="has-text-white" data-cy="film-card-description">
 				{{ film.description }}
 			</p>
+
+			<b-taglist attached class="custom-mt-6" data-cy="film-card-score">
+				<b-tag type="is-dark">Rotten Tomato score</b-tag>
+				<b-tag type="is-light">{{ film.rt_score }}</b-tag>
+			</b-taglist>
 		</div>
 		<footer class="card-footer" data-cy="film-card-footer">
 			<p class="card-footer-item">
@@ -18,11 +23,14 @@
 </template>
 
 <script>
+const requiredPropertiesOnFilm = ['title', 'description', 'rt_score', 'release_date', 'director']
+
 export default {
 	props: {
 		film: {
 			type: Object,
-			required: true
+			required: true,
+			validator: film => requiredPropertiesOnFilm.every(key => key in film)
 		}
 	}
 }

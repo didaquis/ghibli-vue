@@ -33,7 +33,7 @@ describe('Films page (stub response from API)', () => {
 		})
 
 		it('Should contain the tag with score', () => {
-			const expectedScore = ['Rotten Tomato score 95', 'Rotten Tomato score 97']
+			const expectedScore = ['Rotten Tomato score95', 'Rotten Tomato score97']
 
 			cy.get('[data-cy=film-card-score]').each(($el) => {
 				const text = $el.text().trim()

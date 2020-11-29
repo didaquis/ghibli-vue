@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .custom-animation:hover {
 	box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-	transform: translate3D(0, -2px, 0);
-	transition: .4s ease;
+	transform: translate3D(0, -4px, 0);
+	transition: .2s ease;
 }
 </style>
